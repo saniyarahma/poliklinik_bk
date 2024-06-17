@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     if ($username == "admin" && $password == "admin") {
         $_SESSION['username'] = $username;
         $_SESSION['akses'] = "admin";
-        header("location:../../dokter.php");
+        header("location:../../dashboard.php");
     } else {
         // Jika bukan admin, cek sebagai dokter
         $query = "SELECT * FROM dokter WHERE nama = '$username'";

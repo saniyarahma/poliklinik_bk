@@ -37,9 +37,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="form-group mb-3">
-                            <textarea class="form-control" rows="3" id="alamat" name="alamat" placeholder="Alamat" required></textarea>
-                        </div> -->
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Alamat" name="alamat" required>
                             <div class="input-group-append">
@@ -64,21 +61,18 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="input-group mb-3">
-                            <input type="password" class="form-control" placeholder="Password" name="password" required>
-                            <div class="input-group-append">
-                                <div class="input-group-text">
-                                    <span class="fas fa-lock"></span>
-                                </div>
+                        <div class="form-group d-flex align-items-center justify-content-between mb-4">
+                            <div class="form-check">
+                                <input type="checkbox" id="agree_terms" name="agree_terms" class="form-check-input">
+                                <label for="agree_terms" class="form-check-label">
+                                    <strong>I agree to the</strong> <strong style="color: blue;">terms</strong>
+                                </label>
                             </div>
-                        </div> -->
-                        <button type="submit" class="btn btn-block btn-primary">
-                            Register
-                        </button>
+                            <button type="submit" name="submit" class="btn btn-primary">Regsiter</button>
+                        </div>
                     </form>
-
-                    <div class="social-auth-links text-center">
-                        <p>I already have an account? <span><a href="loginUser.php">Login</a></span></p>
+                    <div class="social-auth-links text-left">
+                        <p><span><a href="loginUser.php">I already have an account</a></span></p>
                     </div>
                 </div>
                 <!-- /.form-box -->

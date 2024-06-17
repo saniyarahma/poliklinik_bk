@@ -20,7 +20,7 @@
                         <h3 class="card-title">Edit Profile</h3>
                     </div>
                     <div class="card-body">
-                        <form action="pages/profileDokter/editProfile.php" method="post">
+                        <form action="pages/profilDokter/updateProfil.php" method="post">
                             <input type="hidden" value="<?php echo $idDokter ?>" name="idDokter">
                             <div class="form-group mb-3">
                                 <label for="nama font-weight-bold">Nama</label>

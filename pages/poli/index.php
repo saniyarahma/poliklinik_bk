@@ -55,7 +55,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="keterangan">Keterangan</label>
-                                                    <textarea class="form-control" rows="3" placeholder="Enter ..."
+                                                    <textarea class="form-control" rows="3"
                                                         id="keterangan" name="keterangan"></textarea>
                                                 </div>
                                                 <button type="submit" class="btn btn-primary">Tambah</button>

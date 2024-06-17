@@ -53,7 +53,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="alamat">Alamat</label>
-                                                    <textarea class="form-control" rows="3" placeholder="Enter ..." id="alamat" name="alamat"></textarea>
+                                                    <input type="text" class="form-control" id="alamat" name="alamat" required>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="no_hp">Nomor HP</label>
@@ -102,7 +102,7 @@
                                 <?php
                                     require 'config/koneksi.php';
                                     $no = 1;
-                                    $query = "SELECT dokter.id, dokter.nama, dokter.alamat, dokter.no_hp, poli.nama_poli 
+                                    $query = "SELECT dokter.id, dokter.nama, dokter.alamat, dokter.no_hp, dokter.id_poli, poli.nama_poli 
                                               FROM dokter 
                                               INNER JOIN poli ON dokter.id_poli = poli.id";
                                     $result = mysqli_query($mysqli, $query);
@@ -141,7 +141,8 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="alamat">Alamat</label>
-                                                        <textarea class="form-control" rows="3" id="alamat" name="alamat"><?php echo $data['alamat'] ?></textarea>
+                                                        <input type="text" class="form-control" id="alamat" name="alamat" value="<?php echo $data['alamat'] ?>" required>
+
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="no_hp">No Hp</label>

@@ -36,24 +36,34 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password" name="password">
+                        <input type="password" class="form-control" placeholder="Password | Case Sensitive" name="password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-block btn-primary">
+                    <div class="form-group d-flex align-items-center justify-content-between mb-4">
+                        <div class="form-check">
+                            <input type="checkbox" id="remember_me" name="remember_me" class="form-check-input">
+                            <label for="remember_me" class="form-check-label">Remember Me</label>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-primary">Sign In</button>
+                    </div>
+                    <!-- <button type="submit" class="btn btn-block btn-primary">
                         Login
-                    </button>
+                    </button> -->
                 </form>
+                <div class="social-auth-links text-left">
+                        <p><span><a href="register.php">Register a new account</a></span></p>
+                </div>
 
-                <div class="social-auth-links text-center mb-3">
+                <!-- <div class="social-auth-links text-center mb-3">
                     <p>- Belum punya akun pasien? -</p>
                     <a href="register.php" class="btn btn-block btn-secondary">
                         Register
                     </a>
-                </div>
+                </div> -->
                 <!-- /.social-auth-links -->
             </div>
             <!-- /.login-card-body -->

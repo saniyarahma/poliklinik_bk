@@ -9,8 +9,7 @@
         $queryUpdate = mysqli_query($mysqli,"UPDATE periksa SET tgl_periksa = '$tgl_Periksa', catatan = '$catatan' WHERE id_daftar_poli = '$idDaftarPoli'");
         if ($queryUpdate) {
             echo '<script>alert("Data berhasil diubah");window.location.href="../../memeriksaPasien.php"</script>';
-        }
-        else{
+        } else {
             echo '<script>alert("Data gagal diubah");window.location.href="../../memeriksaPasien.php"</script>';
         }
     }

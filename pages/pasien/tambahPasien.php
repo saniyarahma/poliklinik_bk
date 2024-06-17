@@ -28,7 +28,7 @@
         else{
             // jika data masih kosong maka no urut reka medis otomatis 001
             if (mysqli_num_rows($query) < 1) {
-                $insertData = "INSERT INTO pasien (nama, password, alamat, no_ktp, no_hp, no_rm) VALUES ('$nama', '$password', '$alamat', '$no_ktp', '$no_hp', '$no_rm')";
+                $insertData = "INSERT INTO pasien (nama, alamat, no_ktp, no_hp, no_rm) VALUES ('$nama','$alamat', '$no_ktp', '$no_hp', '$no_rm')";
                 $queryInsert = mysqli_query($mysqli,$insertData);
                 if ($queryInsert) {
                     echo '<script>alert("Pendaftaran akun berhasil");window.location.href="../../pasien.php";</script>';
@@ -68,7 +68,7 @@
                 else if($urutanTerakhir <= 9){
                     $no_rm_baru = $tahun.$bulan.'-'.'00'.$urutanTerakhir;
                 }
-                $insertDataBaru = "INSERT INTO pasien (nama, password, alamat, no_ktp, no_hp, no_rm) VALUES ('$nama', '$password', '$alamat', '$no_ktp', '$no_hp', '$no_rm_baru')";
+                $insertDataBaru = "INSERT INTO pasien (nama, alamat, no_ktp, no_hp, no_rm) VALUES ('$nama', '$alamat', '$no_ktp', '$no_hp', '$no_rm_baru')";
                 $queryInsertBaru = mysqli_query($mysqli,$insertDataBaru);
     
                 if ($queryInsertBaru) {

@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $no_ktp = $_POST["no_ktp"];
     $no_hp = $_POST["no_hp"];
 
-    // Query untuk melakukan update data obat
+    // Query untuk melakukan update data pasien
     $query = "UPDATE pasien SET 
         nama = '$nama', 
         alamat = '$alamat', 
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mysqli_query($mysqli, $query)) {
         // Jika berhasil, redirect kembali ke halaman index atau sesuaikan dengan kebutuhan Anda
         echo '<script>';
-        echo 'alert("Data obat berhasil diubah!");';
+        echo 'alert("Data pasien berhasil diubah!");';
         echo 'window.location.href = "../../pasien.php";';
         echo '</script>';
         exit();

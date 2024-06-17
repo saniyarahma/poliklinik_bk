@@ -51,22 +51,17 @@
                                                 </div>
                                                 <div class="form-group mb-3">
                                                     <label for="alamat">Alamat</label>
-                                                    <textarea class="form-control" rows="3" id="alamat" name="alamat"
-                                                        placeholder="Alamat" required></textarea>
+                                                    <input type="text" class="form-control" id="alamat" name="alamat"
+                                                        required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="no_ktp">No KTP</label>
+                                                    <label for="no_ktp">Nomor KTP</label>
                                                     <input type="text" class="form-control" id="no_ktp" name="no_ktp"
                                                         required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="no_hp">No HP</label>
+                                                    <label for="no_hp">Nomor HP</label>
                                                     <input type="text" class="form-control" id="no_hp" name="no_hp"
-                                                        required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="no_rm">No.RM</label>
-                                                    <input type="text" class="form-control" id="no_rm" name="no_rm"
                                                         required>
                                                 </div>
                                                 <button type="submit" class="btn btn-primary">Tambah</button>
@@ -94,7 +89,7 @@
                             </thead>
                             <tbody>
 
-                                <!-- TAMPILKAN DATA OBAT DI SINI -->
+                                <!-- TAMPILKAN DATA PASIEN DI SINI -->
                                 <?php
                             require 'config/koneksi.php';
                             $no = 1;
@@ -143,9 +138,9 @@
                                                         </div>
                                                         <div class="form-group mb-3">
                                                             <label for="alamat">Alamat</label>
-                                                            <textarea class="form-control" rows="3" id="alamat"
-                                                                name="alamat" placeholder="Alamat"
-                                                                required><?php echo $data['alamat'] ?></textarea>
+                                                            <input type="text" class="form-control" id="alamat"
+                                                                name="alamat" value="<?php echo $data['alamat'] ?>"
+                                                                required>
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="no_ktp">No. KTP</label>
@@ -171,7 +166,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Modal Hapus Data Obat -->
+                                    <!-- Modal Hapus Data Pasien -->
                                     <div class="modal fade" id="hapusModal<?php echo $data['id'] ?>" tabindex="-1"
                                         role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
@@ -184,7 +179,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <!-- Form hapus data obat disini -->
+                                                    <!-- Form hapus data Pasien disini -->
                                                     <form action="pages/pasien/hapusPasien.php" method="post">
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>

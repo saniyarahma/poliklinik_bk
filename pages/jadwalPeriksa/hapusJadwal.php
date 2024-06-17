@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Jika berhasil, redirect kembali ke halaman index atau sesuaikan dengan kebutuhan Anda
         echo '<script>';
         echo 'alert("Data jadwal berhasil dihapus!");';
-        echo 'window.location.href = "../../index.php?page=jadwalPeriksa";';
+        echo 'window.location.href = "../../jadwalPeriksa.php";';
         echo '</script>';
         exit();
     } else {
